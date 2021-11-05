@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body{
+    background: #14071E;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 75px;
+}
+
+a:link {
+    text-decoration: none;
+    z-index: 100;
+    color: white;
+}
+
+.sharolayn{
+    padding: 5px 20px 15px 20px;
+    font-size: 80px;
+}
+
+a:visited {
+    color: white;
+}
+
+
+.index.html
+
+.body{
+    position: relative;
+    background-size: contain;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.red{
+    position: absolute;
+    top: 120px; 
+    left: 0;
+    transition: 1s;
+    size: contain;
+    background-attachment: fixed;
+}
+
+.redpen:hover {
+    width: 280px;
+    transition: 1s;
+}
+
+.green{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    transition: .5s;
+    size: contain;
+    background-attachment: fixed;
+}
+
+.greenpen:hover {
+    width: 280px;
+    transition: .5s;
+}
+
+.black{
+    position: absolute;
+    bottom: 100px;
+    transition: .5s;
+    right: 550px;
+    size: contain;
+    background-attachment: fixed;
+}
+
+.blackpen:hover {
+    width: 280px;
+    transition: .5s;
+}
