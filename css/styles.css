@@ -13,11 +13,14 @@ nav ul{
     list-style-type: none;
 }
 
-nav ul li{
+/* This adds margin on the left and right of each li tag. I also decreased the size of your links to give more weight to your name */
+nav ul li {
     display: inline;
     font-family: 'Over the Rainbow', cursive;
-    font-size: 75px;
+    font-size: 40px;
+    margin: 0 20px;
 }
+
 
 a:link {
     text-decoration: none;
@@ -29,10 +32,22 @@ a:visited {
     color: white;
 }
 
+a:active {
+    color:gray;
+}
+
+
 .sharolayn{
-    padding: 5px 20px 15px 20px;
+    padding: 5px 20px 15px 7px;
     font-size: 80px;
 }
+
+a:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
 
 .body{
     position: relative;
@@ -41,44 +56,143 @@ a:visited {
     z-index: 0;
 }
 
-.red{
+/* .red{
     position: absolute;
     top: 120px; 
     left: 0;
     transition: 1s;
     size: contain;
     background-attachment: fixed;
-}
+} */
 
-.redpen:hover {
-    width: 280px;
+/*This will make it where the image will move up 10px whenever user hovers over it */
+.red img,
+.black img,
+.green img{
+    position: relative;
     transition: 1s;
 }
 
-.green{
+.red:hover img,
+.green:hover img {
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+.black:hover img {
+    transform: translateY(10px);
+    transition: 1s;
+}
+
+/* .green{
     position: absolute;
     top: 120px;
     right: 0;
     transition: .5s;
     size: contain;
     background-attachment: fixed;
-}
+} */
 
-.greenpen:hover {
+/* .greenpen:hover {
     width: 280px;
     transition: .5s;
-}
+} */
 
-.black{
+/* .black{
     position: absolute;
     bottom: 100px;
     transition: .5s;
     right: 550px;
     size: contain;
     background-attachment: fixed;
-}
+} */
 
-.blackpen:hover {
+/* .blackpen:hover {
     width: 280px;
     transition: .5s;
+} */
+
+
+
+
+/* Aligns all three colors in the same row and centers them on the home page */
+main.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* This is the container for your about page so your content is in the middle of the page */
+main.container {
+    margin: 0 auto;
+    max-width: 80%;
+    color: white;
+}
+
+
+/* This gives color the position of relative. This means that it act as the container that will hold the link to the other pages. */
+.color {
+    position: relative;
+    max-width: 263px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10%;
+}
+
+/* This is giving the link a position of absolute so we can place it on top of the image. I'm using display flex and other properties to make sure that it is centered aligned on the color*/
+.color a {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120%;
+}
+
+.black.color a {
+    margin-bottom: 130px;
+}
+
+.black.color {
+    bottom: 190px;
+}
+
+.red.color {
+    left: -10px;
+}
+
+.green.color {
+    right: -10px;
+}
+
+
+
+
+
+
+
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
