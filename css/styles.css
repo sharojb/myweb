@@ -6,7 +6,7 @@
 
 html,
 body{
-    background: #14071E;
+    background: ##7d5e95
 }
 
 nav ul{
@@ -56,15 +56,6 @@ a:hover{
     z-index: 0;
 }
 
-/* .red{
-    position: absolute;
-    top: 120px; 
-    left: 0;
-    transition: 1s;
-    size: contain;
-    background-attachment: fixed;
-} */
-
 /*This will make it where the image will move up 10px whenever user hovers over it */
 .red img,
 .black img,
@@ -83,37 +74,6 @@ a:hover{
     transform: translateY(10px);
     transition: 1s;
 }
-
-/* .green{
-    position: absolute;
-    top: 120px;
-    right: 0;
-    transition: .5s;
-    size: contain;
-    background-attachment: fixed;
-} */
-
-/* .greenpen:hover {
-    width: 280px;
-    transition: .5s;
-} */
-
-/* .black{
-    position: absolute;
-    bottom: 100px;
-    transition: .5s;
-    right: 550px;
-    size: contain;
-    background-attachment: fixed;
-} */
-
-/* .blackpen:hover {
-    width: 280px;
-    transition: .5s;
-} */
-
-
-
 
 /* Aligns all three colors in the same row and centers them on the home page */
 main.home {
@@ -170,6 +130,90 @@ main.container {
 .green.color {
     right: -10px;
 }
+
+/*===========================
+Create Page
+===========================*/
+.reds.colors {
+    bottom: 3px;
+    right: -1000px;
+}
+
+.greens.colors {
+    bottom: -99px;
+    right: 73px;
+}
+
+.blacks.colors {
+    bottom: -247px;
+    right: -148px;
+}
+
+.colors {
+    position: relative;
+    max-width: 263px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.colors a {
+    position: absolute; 
+    top: 0;
+    left: 230px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 120%;
+}
+
+.blacks.colors a {
+    position: absolute; 
+    top: 0;
+    left: 460px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120%;
+}
+
+/*===========================
+About Page
+===========================*/
+
+
+
+
+/*===========================
+Analyze Page
+===========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
