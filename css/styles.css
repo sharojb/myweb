@@ -6,7 +6,7 @@
 
 html,
 body{
-    background: #7d5e95
+    background: #f5a4dc;
 }
 
 nav ul{
@@ -141,7 +141,7 @@ Create Page
 
 .greens.colors {
     bottom: -99px;
-    right: 73px;
+    right: 74px;
 }
 
 .blacks.colors {
@@ -190,7 +190,58 @@ Create Page
 /*===========================
 About Page
 ===========================*/
+.redm.colorm {
+    bottom: -262px;
+    right: -684px;
+}
 
+.greenm.colorm {
+    bottom: -11px;
+    right: 81px;
+}
+
+.blackm.colorm {
+    bottom: -113px;
+    right: -455px;
+}
+
+.colorm {
+    position: relative;
+    max-width: 263px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.colorm a {
+    position: absolute; 
+    top: 0;
+    left: 230px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 120%;
+}
+
+.redm.colorm a {
+    position: absolute; 
+    top: 0;
+    left: 460px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120%;
+}
 
 
 
@@ -198,7 +249,58 @@ About Page
 Analyze Page
 ===========================*/
 
+.redl.colorl {
+    bottom: -114px;
+    right: -997px;
+}
 
+.blackl.colorl {
+    bottom: -11px;
+    right: -457px;
+}
+
+.greenl.colorl {
+    bottom: -263px;
+    right: 386px;
+}
+
+.colorl {
+    position: relative;
+    max-width: 263px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.colorl a {
+    position: absolute; 
+    top: 0;
+    left: 230px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 120%;
+}
+
+.greenl.colorl a {
+    position: absolute; 
+    top: 0;
+    left: 460px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120%;
+}
 
 
 
