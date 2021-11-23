@@ -135,18 +135,18 @@ main.container {
 Create Page
 ===========================*/
 .reds.colors {
-    bottom: 3px;
+    bottom: -14px;
     right: -1000px;
 }
 
 .greens.colors {
-    bottom: -99px;
+    bottom: -116px;
     right: 74px;
 }
 
 .blacks.colors {
-    bottom: -247px;
-    right: -148px;
+    bottom: -264px;
+    right: -149px;
 }
 
 .colors {
@@ -309,21 +309,75 @@ Contact Form
 ===========================*/
 
 .contact-form {
-    background: lightblue; 
+    background: #42664e; 
     padding: 20px;
-    max-width: 500px;
+    max-width: 900px;
     border-radius: 8px;
     color: white;
     font-family: sans-serif;
     margin: 0 auto;
+    text-align: left;
 }
 
+.container-form{
+    max-width: 900px;
+    position: absolute;
+    left: 100px;
+    top: 130px;
+}
 
+.label_input_wrap {
+    display: inline;
+}
 
+h1{
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 35px;
+}
 
+.reset input,
+.submit input {
+    color: white;
+    padding: 5px 20px;
+}
 
+.reset,
+.submit{
+    display: inline;
+}
 
+.input-section{
+    margin-bottom: 8px;
+}
 
+.submit input{
+    background: #c43737;
+}
+
+.reset input{
+    background: #161414;
+}
+
+input{
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+textarea{
+    font-family: sans-serif;
+    padding: 9px 10px;
+    border-radius: 4px;
+}
+
+select{
+    width: 185px;
+    padding: 8px 0;
+    border-radius: 4px; 
+}
+
+.com{
+    display: block;
+}
 
 
 
