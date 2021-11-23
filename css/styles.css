@@ -355,7 +355,7 @@ h1{
 }
 
 .reset input{
-    background: #161414;
+    background: gray;
 }
 
 input{
@@ -379,6 +379,9 @@ select{
     display: block;
 }
 
+.in{
+    color: black;
+}
 
 
 
