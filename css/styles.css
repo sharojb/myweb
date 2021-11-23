@@ -304,8 +304,19 @@ Analyze Page
 
 
 
+/*===========================
+Contact Form
+===========================*/
 
-
+.contact-form {
+    background: lightblue; 
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 8px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
 
 
 
