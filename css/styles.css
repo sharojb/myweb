@@ -21,7 +21,6 @@ nav ul li {
     margin: 0 20px;
 }
 
-
 a:link {
     text-decoration: none;
     z-index: 100;
@@ -36,7 +35,6 @@ a:active {
     color:gray;
 }
 
-
 .sharolayn{
     padding: 5px 20px 15px 7px;
     font-size: 80px;
@@ -47,7 +45,7 @@ a:hover{
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
-  }
+}
 
 .body{
     position: relative;
@@ -365,7 +363,7 @@ input{
 
 textarea{
     font-family: sans-serif;
-    padding: 9px 10px;
+    padding: 6px 6px;
     border-radius: 4px;
 }
 

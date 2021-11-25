@@ -1,112 +1,115 @@
 <!DOCTYPE html>
-<head>
-  <title></title>
-  <meta charset="utf-8" />
+<html lang="en">
+  <head>
+    <title>Analyze</title>
+    <meta charset="utf-8" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-          <li class="sharolayn"><a href="index.html">Sharolayn</a></li>
-      </ul>
-    </nav>
-  </header>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li class="sharolayn"><a href="index.html">Sharolayn</a></li>
+        </ul>
+      </nav>
+    </header>
 
 
-  <main class="home">
+    <main class="home">
 
-    <section class="redl colorl" >
-        <img class="redpen" src="images/redL.png" alt="redpen">
+      <section class="redl colorl" >
+          <img class="redpen" src="images/redL.png" alt="redpen">
 
-        <a href="about.html">Me</a>
-    </section>
-    
-    <section class="blackl colorl" >
-      <img class="blackpen" src="images/blackL.png" alt="blackpen">
+          <a href="about.html">Me</a>
+      </section>
+      
+      <section class="blackl colorl" >
+        <img class="blackpen" src="images/blackL.png" alt="blackpen">
 
-      <a href="create.html">Create</a>
-    </section>
+        <a href="create.html">Create</a>
+      </section>
 
-    <section class="greenl colorl" >
-      <img class="greenpen" src="images/greenL.png" alt="greenpen">
+      <section class="greenl colorl" >
+        <img class="greenpen" src="images/greenL.png" alt="greenpen">
 
-      <a href="analyze.html">Analyze</a>
-    </section>
+        <a href="analyze.html">Analyze</a>
+      </section>
 
-<!------------------------ Form ----------------------------->
-    <div class="container-form">
-      <h1>Contact Me</h1>
+  <!-- Form -->
+      <div class="container-form">
+        <h1>Contact Me</h1>
 
-      <form class="contact-form" name="firstform" method="POST" action="">
-        <div class="first-name input-section">
-          <label for="firstname" class="label_input_wrap">First Name:</label>
-          <input type="text" name="firstname" id="firstname" placeholder="ex. Mary"/>
-        </div>
-
-        <div class="last-name input-section">
-          <label for="lastname" class="label_input_wrap">Last Name:</label>
-          <input type="text" name="lastname" id="lastname" placeholder="ex. Garcia"/>    
-        </div>
-
-        <div class="email input-section">
-          <label for="email" class="label_input_wrap">Email:</label>
-          <input type="email" name="email" id="email" placeholder="mgarcia@example.com"/>
-        </div>
-
-        <div class="telephone input-section">
-          <label for="telephone" class="label_input_wrap">Telephone:</label>
-          <input type="tel" name="telephone" id="telephone" placeholder="555-444-333" />
+        <form class="contact-form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
+        
+          <div class="first-name input-section">
+            <label for="firstname" class="label_input_wrap">First Name:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="ex. Mary"/>
           </div>
 
-        <div class="datepicker input-section">
-          <label for="birthday">When were you born?</label>
-          <input type="date" name="birthday" id="birthday" />
-        </div>
+          <div class="last-name input-section">
+            <label for="lastname" class="label_input_wrap">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="ex. Garcia"/>    
+          </div>
 
-        <div class="comments input-section">
-            <label for="comments" class="label_input_wrap com">Comments:</label>
-            <textarea name="comments" id="comments" placeholder="Your Comment Goes Here" cols="35" rows="3"></textarea>
-        </div>
+          <div class="email input-section">
+            <label for="email" class="label_input_wrap">Email:</label>
+            <input type="email" name="email" id="email" placeholder="mgarcia@example.com"/>
+          </div>
 
-        <div class="checkbox input-section">
-            <h3 class="in">Interested in:</h3>
-            <input type="checkbox" name="interest" value="design" id="design" /><label for="design"> Designs</label>
-            <input type="checkbox" name="interest" value="psy" id="psy" /><label for="psy"> Psychoanalysis</label>
-            <input type="checkbox" name="sports" value="co" id="co" /><label for="co"> Work Together</label>
-        </div>
+          <div class="telephone input-section">
+            <label for="telephone" class="label_input_wrap">Telephone:</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="555-444-333" />
+            </div>
 
-        <!-- Possible button
-        <div class="radiobutton input-section">
-            <h3>Preffered Contact Method</h3>
-            <input type="radio" name="prefer" value="email" id="email" /><label for="email">Email</label>
-            <input type="radio" name="prefer" value="telephone" id="telephone" /><label for="telephone">Text Message</label>
-        </div>-->
+          <div class="datepicker input-section">
+            <label for="birthday">When were you born?</label>
+            <input type="date" name="birthday" id="birthday" />
+          </div>
 
-        <div class="dropdown input-section">
-          <label for="refer" class="label_input_wrap">How did you hear about me?</label>
-            <select name="refer" id="refer">
-              <option value="reference">Reference</option>
-              <option value="sm">Social Media</option>
-              <option value="search">Google Search</option>
-            </select>
-        </div>
+          <div class="comments input-section">
+              <label for="comments" class="label_input_wrap com">Comments:</label>
+              <textarea name="comments" id="comments" placeholder="Your Comment Goes Here" cols="35" rows="3"></textarea>
+          </div>
 
-        <div class="reset">
-          <input type="reset" value="Clear"/>
-        </div>
+          <div class="checkbox input-section">
+              <h3 class="in">Interested in:</h3>
+              <input type="checkbox" name="interest" value="design" id="design" /><label for="design"> Designs</label>
+              <input type="checkbox" name="interest" value="psy" id="psy" /><label for="psy"> Psychoanalysis</label>
+              <input type="checkbox" name="sports" value="co" id="co" /><label for="co"> Work Together</label>
+          </div>
 
-        <div class="submit">
-          <input type="submit" value="Send"/>
-        </div>
+          <!-- Possible button
+          <div class="radiobutton input-section">
+              <h3>Preffered Contact Method</h3>
+              <input type="radio" name="prefer" value="email" id="email" /><label for="email">Email</label>
+              <input type="radio" name="prefer" value="telephone" id="telephone" /><label for="telephone">Text Message</label>
+          </div>-->
 
-      </form>
-    </div>
+          <div class="dropdown input-section">
+            <label for="refer" class="label_input_wrap">How did you hear about me?</label>
+              <select name="refer" id="refer">
+                <option value="reference">Reference</option>
+                <option value="sm">Social Media</option>
+                <option value="search">Google Search</option>
+              </select>
+          </div>
 
-    
-  </main>
-</body>
+          <div class="reset">
+            <input type="reset" value="Clear"/>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Send"/>
+          </div>
+
+        </form>
+      </div>
+
+      
+    </main>
+  </body>
+</html>
