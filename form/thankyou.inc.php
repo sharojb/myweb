@@ -15,7 +15,6 @@ nav ul{
     list-style-type: none;
 }
 
-/* This adds margin on the left and right of each li tag. I also decreased the size of your links to give more weight to your name */
 nav ul li {
     display: inline;
     font-family: 'Over the Rainbow', cursive;
@@ -57,7 +56,27 @@ a:hover{
     z-index: 0;
 }
 
+.contact-form-ty {
+    background: #42664e; 
+    padding: 25px 20px 40px;
+    max-width: 600px;
+    border-radius: 8px;
+    color: white;
+    font-family: sans-serif;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 38px;
+    color:black;
+    padding: 0 0 20px;
+}
+
 </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
 
 <header>
     <nav>
@@ -67,7 +86,7 @@ a:hover{
     </nav>
 </header>
 
-<div class=container-form>
+<div class=contact-form-ty>
     <h1>Thank you for your enquiry</h1>
-    <p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p> 
+    <p>I have received your message and I will be in touch shortly.</p> 
 </div>
