@@ -6,7 +6,7 @@
 
 html,
 body{
-    background: #f5a4dc;
+    background: #64002a;
 }
 
 nav ul{
@@ -184,6 +184,32 @@ Create Page
     text-align: center;
     line-height: 120%;
 }
+
+/*===========================
+Images
+
+.portiko2{
+    position: absolute;
+    max-width: 200px;
+    left: 30%;
+    top: 25%;
+}
+
+.mid1{
+    position: absolute;
+    max-width: 200px;
+    left: 7%;
+    top: 28%;
+}
+
+.psych1{
+    position: absolute;
+    max-width: 220px;
+    left: 28%;
+    bottom: 1%;
+}
+===========================*/
+
 
 /*===========================
 About Page

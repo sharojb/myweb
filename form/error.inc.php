@@ -27,6 +27,7 @@ a:link {
     text-decoration: none;
     z-index: 100;
     color: white;
+    font-family: 'Over the Rainbow', cursive;
 }
 
 a:visited {
@@ -56,10 +57,10 @@ a:hover{
     z-index: 0;
 }
 
-.contact-form-ty {
+.contact-form-er {
     background: #42664e; 
-    padding: 25px 20px 40px;
-    max-width: 600px;
+    padding: 10px 20px 10px;
+    max-width: 500px;
     border-radius: 8px;
     color: white;
     font-family: sans-serif;
@@ -71,7 +72,35 @@ h1{
     font-family: 'Over the Rainbow', cursive;
     font-size: 38px;
     color:black;
-    padding: 0 0 20px;
+    padding: 0 0 10px;
+}
+
+ul.error{
+    display: block;
+    text-align:center;
+    margin: 15px 0 15px;
+    list-style-type: none;
+    color: #c43737;;
+}
+
+.missing{
+    margin: 0 0 10px;
+}
+
+a.em{
+    font-size: 25px;
+    color: black;
+}
+
+footer{
+    background: #161414;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0.5px; 
+    padding: 12px 0;
 }
 
 </style>
@@ -86,19 +115,23 @@ h1{
     </nav>
 </header>
 
-<div class=container-form-ty>
+<div class=contact-form-er>
 
-	<h1>Missing fields</h1>
-	<p>Sorry, you have not completed all of the required fields.</p>
-	<p>Please hit <a href="#" onClick="history.go(-1)">back</a> and complete the following required fields.</p>
+	<h1>Missing Fields</h1>
+	<p class="missing">Sorry, you have not completed all of the required fields.</p>
+	<p class="missing">Please complete the following required fields.</p>
 
-	<ul>
+	<ul class="error">
 	<?php
 		for($i=0; $i<count($this->missing_required_fields); $i++){
-			echo "<li>" . $this->missing_required_fields[$i]['title'] . "</li>\n";
+			echo "<li><strong>" . $this->missing_required_fields[$i]['title'] . "</strong></li>\n";
 		}
 	?>
 	</ul>
 
-	<p><strong><a href="#" onClick="history.go(-1)">Back to form</a></strong></p>
+	<h2><a class="em" href="#" onClick="history.go(-1)">Complete Form</a></h2>
 </div>
+
+<footer>
+    <p>This page is designed by Sharolayn Jarque</p>
+</footer>

@@ -74,6 +74,17 @@ h1{
     padding: 0 0 20px;
 }
 
+footer{
+    background: #161414;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0.5px; 
+    padding: 12px 0;
+}
+
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
@@ -86,8 +97,11 @@ h1{
     </nav>
 </header>
 
-<div class="container-form-ty">
+<div class="contact-form-ty">
     <h1>Please try again</h1>
     <p>Something went wrong with you submission.</p>
 </div>
 
+<footer>
+    <p>This page is designed by Sharolayn Jarque</p>
+</footer>
