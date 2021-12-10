@@ -135,6 +135,7 @@ footer{
     background: black;
     padding: 10px 0;
     font-family: sans-serif;
+    font-size: 12px;
 }
 
 footer a{
@@ -312,7 +313,7 @@ About Page
     position: absolute;
     max-width: 400px;
     top: 165px;
-    left: 80px;
+    left: 100px;
     font-size: 20px;
     background: #C43737;
     border-radius: 10px;
@@ -415,13 +416,17 @@ Analyze Page
     line-height: 120%;
 }
 
+.contactanalyze{
+    padding: 0 0 0 16px;
+}
+
 /*===========================
 Contact Form
 ===========================*/
 
 .contact-form {
     background: #42664e; 
-    padding: 20px;
+    padding: 0 20px 20px;
     max-width: 900px;
     border-radius: 8px;
     color: white;
@@ -434,7 +439,10 @@ Contact Form
     max-width: 900px;
     position: absolute;
     left: 100px;
-    top: 130px;
+    top: 150px;
+    background: #42664e; 
+    border-radius: 8px;
+    padding: 0 10px;
 }
 
 .label_input_wrap {
