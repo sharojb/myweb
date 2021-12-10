@@ -129,6 +129,26 @@ main.container {
     right: -10px;
 }
 
+footer{
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+
+footer a{
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+footer a:hover{
+    color: gray;
+    transition: .3s;
+}
+
 /*===========================
 Create Page
 ===========================*/
@@ -185,31 +205,52 @@ Create Page
     line-height: 120%;
 }
 
-/*===========================
-Images
+
+/*=====Images=====*/
 
 .portiko2{
     position: absolute;
-    max-width: 200px;
-    left: 30%;
+    left: 4%;
     top: 25%;
 }
 
 .mid1{
     position: absolute;
-    max-width: 200px;
-    left: 7%;
-    top: 28%;
+    left: 350px;
+    top: 25%;
 }
 
 .psych1{
     position: absolute;
-    max-width: 220px;
-    left: 28%;
-    bottom: 1%;
+    left: 350px;
+    bottom: 9%;
 }
-===========================*/
 
+.psych2{
+    position: absolute;
+    left: 55px;
+    bottom: 101px;
+}
+
+section.gallery img{
+    width: 295px;
+}
+
+.lb-data .lb-caption {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1em;
+    font-family: 'Over the Rainbow', cursive;
+}
+
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 10px;
+}
 
 /*===========================
 About Page
@@ -267,7 +308,55 @@ About Page
     line-height: 120%;
 }
 
+.aboutme {
+    position: absolute;
+    max-width: 400px;
+    top: 165px;
+    left: 80px;
+    font-size: 20px;
+    background: #C43737;
+    border-radius: 10px;
+    padding: 5px 10px 5px 15px;
+    text-shadow: 0px 0px black;
+}
 
+img.mepic {
+    max-width: 300px;
+    position: absolute;
+    left: 554px;
+    top: 165px;
+    border-radius: 10px;
+}
+
+details > summary {
+    position: absolute;
+    padding: 4px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+    left: 554px;
+    top: 390px;
+    font-family: sans-serif;
+    font-size: 12px;
+    max-width: 85px;
+    border-radius: 10px;
+}
+  
+details > p {
+    position: absolute;
+    background-color: white;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    left: 568px;
+    top: 390px;
+    font-family: sans-serif;
+    font-size: 12px;
+    max-width: 210px;
+    border-radius: 10px;
+  }
 
 /*===========================
 Analyze Page
@@ -325,8 +414,6 @@ Analyze Page
     text-align: center;
     line-height: 120%;
 }
-
-
 
 /*===========================
 Contact Form
