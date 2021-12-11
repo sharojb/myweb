@@ -8,7 +8,7 @@
 
 html,
 body{
-    background: #f5a4dc;
+    background: #64002a;
 }
 
 nav ul{
@@ -21,7 +21,6 @@ nav ul li {
     font-size: 40px;
     margin: 0 20px;
 }
-
 
 a:link {
     text-decoration: none;
@@ -47,7 +46,7 @@ a:hover{
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
-  }
+}
 
 .body{
     position: relative;
@@ -75,19 +74,39 @@ h1{
 }
 
 footer{
-    background: #161414;
-    color: white;
     text-align: center;
-    padding: 15px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0.5px; 
-    padding: 12px 0;
+    color: white;
+    background: black;
+    padding: 10px 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    height: 62px;
+    padding-top: 20px;
+    margin-top: 150px;
+}
+
+footer a{
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+footer a:hover{
+    color: gray;
+    transition: .3s;
 }
 
 </style>
 
-<link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
+<head>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/396d298c48.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
+</head>
+
 
 <header>
     <nav>
@@ -102,6 +121,10 @@ footer{
     <p>Something went wrong with you submission.</p>
 </div>
 
-<footer>
-    <p>This page is designed by Sharolayn Jarque</p>
+<footer> 
+      <p>Follow Me</p>
+      <p><a href="https://www.instagram.com/psycharte/?hl=en" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.facebook.com/Psychartes/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      </p>
+      <p class="website">Website by Sharolayn Jarque</p>
 </footer>

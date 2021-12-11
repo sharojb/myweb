@@ -206,36 +206,39 @@ Create Page
     line-height: 120%;
 }
 
-
 /*=====Images=====*/
-
 .portiko2{
     position: absolute;
-    left: 4%;
+    left: 67px;
     top: 25%;
+    max-width: 299px;
+    height: 187px;
 }
 
 .mid1{
     position: absolute;
-    left: 350px;
+    left: 366px;
     top: 25%;
+    max-width: 300px;
 }
 
 .psych1{
     position: absolute;
-    left: 350px;
-    bottom: 9%;
+    left: 366px;
+    bottom: 57px;
+    max-width: 300px;
 }
 
 .psych2{
     position: absolute;
-    left: 55px;
-    bottom: 101px;
+    left: 66px;
+    bottom: 57px;
+    max-width: 300px;
 }
 
-section.gallery img{
+/*==section.gallery img{
     width: 295px;
-}
+}==*/
 
 .lb-data .lb-caption {
     font-size: 35px;
@@ -362,7 +365,6 @@ details > p {
 /*===========================
 Analyze Page
 ===========================*/
-
 .redl.colorl {
     bottom: -114px;
     right: -997px;
@@ -423,7 +425,6 @@ Analyze Page
 /*===========================
 Contact Form
 ===========================*/
-
 .contact-form {
     background: #42664e; 
     padding: 0 20px 20px;
